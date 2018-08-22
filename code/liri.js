@@ -5,12 +5,13 @@ var keys = require("./keys");
 var request = require("request");
 var fs = require("fs");
 var omdb = require("omdb");
+var spotify = require("./spotify");
+var dowhat = require("./dowhat");
 
 // spotify = new Spotify(keys.spotify);
 // var client = new Twitter(keys.twitter);
 // var spotify = keys.spotify;
-console.log(keys.spotify);
-
+// console.log(keys.spotify);
 
 // define cli Inputs
 var comm = process.argv[2];
@@ -22,13 +23,13 @@ var results;
 switch(comm) {
 
     case "spotify-this-song":
-        results = doSpotify(arg1,arg2);
-        console.log(results);
+        results = spotify.doSpotify(arg1);
+        console.log("got here");
         break;
 
 
     case "movie-this":
-        results = doOmdb(arg1,arg2); 
+        results = omdb.doOmdb(arg1); 
         console.log(results);
         break;
 
@@ -38,8 +39,11 @@ switch(comm) {
         break;
 
     case "do-what-it-says":
-        results = doStuff();
-        console.log(results);
+        results = dowhat.doStuff();
+        console.log("Liri DoWhat.JS Return: " + results);
+        array = results.split(",");
+        console.log(array);
+        spotify.doSpotify(array[1]);
         break;
     
     default:
@@ -48,31 +52,31 @@ switch(comm) {
 
 }
 
-function doSpotify(arg1,arg2) {
-    console.log("made it to Spotify");
-    results = arg1+arg2;
-    return(results);
+// function doSpotify(arg1,arg2) {
+//     console.log("made it to Spotify");
+//     results = arg1+arg2;
+//     return(results);
 
-}
+// }
 
-function doOmdb(arg1,arg2) {
-    console.log("made it to OMDB");
-    results = arg1+arg2;
-    return(results);
+// function doOmdb(arg1,arg2) {
+//     console.log("made it to OMDB");
+//     results = arg1+arg2;
+//     return(results);
 
-}
+// }
 
-function doBands(arg1,arg2) {
-    console.log("made it to Bands");
-    results = arg1+arg2;
-    return(results);
+// function doBands(arg1,arg2) {
+//     console.log("made it to Bands");
+//     results = arg1+arg2;
+//     return(results);
 
-}
+// }
 
-function doStuff() {
-    console.log("what it says");
-    results = "stuff";
-    return(results);
+// function doStuff() {
+//     console.log("what it says");
+//     results = "stuff";
+//     return(results);
 
-}
+// }
 
