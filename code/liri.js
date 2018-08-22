@@ -1,10 +1,10 @@
 // main application file
 
 require("dotenv").config();
-var keys = require("./keys");
-var request = require("request");
-var fs = require("fs");
-var omdb = require("omdb");
+// var keys = require("./keys");
+// var request = require("request");
+// var fs = require("fs");
+var omdb = require("./omdb");
 var spotify = require("./spotify");
 var dowhat = require("./dowhat");
 
@@ -34,7 +34,7 @@ switch(comm) {
         break;
 
     case "concert-this":
-        results = doBands(arg1,arg2);
+        results = doBands(arg1, arg2);
         console.log(results);
         break;
 
@@ -51,32 +51,3 @@ switch(comm) {
         break;
 
 }
-
-// function doSpotify(arg1,arg2) {
-//     console.log("made it to Spotify");
-//     results = arg1+arg2;
-//     return(results);
-
-// }
-
-// function doOmdb(arg1,arg2) {
-//     console.log("made it to OMDB");
-//     results = arg1+arg2;
-//     return(results);
-
-// }
-
-// function doBands(arg1,arg2) {
-//     console.log("made it to Bands");
-//     results = arg1+arg2;
-//     return(results);
-
-// }
-
-// function doStuff() {
-//     console.log("what it says");
-//     results = "stuff";
-//     return(results);
-
-// }
-

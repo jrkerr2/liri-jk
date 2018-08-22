@@ -3,7 +3,7 @@ require("dotenv").config();
 var keys = require("./keys");
 
 // console.log(keys);
-console.log("Before spotify call 7");
+console.log("Before spotify call #7");
 // console.log(keys.spotify.id, keys.spotify.secret);
 
 // Spotify call
@@ -14,7 +14,7 @@ var spotify = new Spotify({
   });
 
 // console.log(keys.spotify.id);
-console.log("Made it through Spotify declaration");
+console.log("Made it through new Spotify");
 
 exports.doSpotify = function(song) {
   console.log("This is the song: " + song);
