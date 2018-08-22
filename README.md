@@ -29,4 +29,3 @@ Description: LIRI is a server-side Node.js application used via a command line i
  - omdb.js should be improved; current functionality returns only 1 result
  - liri.js arguments now require quotes to capture multiple words in a string; this can be improved
  - omdb.js 'Rotten Tomatoes' requirement is partially met; result yet to be fully parsed / parsed properly for presentation
- - still missing "The Sign" Spotify default case
