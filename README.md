@@ -12,7 +12,7 @@ Description: LIRI is a server-side Node.js application used via a command line i
  - verify node_modules contains package.json ingredients
 
 ## Using LIRI
- - syntax: node liri.js <command> <arg>
+ - basic syntax: node liri.js `<command>` `<arg>`
  - example1: node liri.js movie-this "Die Hard"
  - example2: node liri.js spotify-this-song jump
  - example3: node liri.js concert-this "van halen"
