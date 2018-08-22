@@ -27,8 +27,9 @@ exports.doSpotify = function(song) {
 
     });
   }
+  
+  // if the user didn't specify a song argument, this is the default value
   else {
-    console.log("made it to the default song!");
     exports.doSpotify("The Sign");
   }
 }
