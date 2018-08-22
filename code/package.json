@@ -1,0 +1,25 @@
+{
+  "name": "code",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ajax": "0.0.4",
+    "bandsintown": "^1.0.1",
+    "dotenv": "^6.0.0",
+    "fs": "0.0.1-security",
+    "jquery": "^3.3.1",
+    "moment": "^2.22.2",
+    "node-spotify-api": "^1.0.7",
+    "omdb": "^0.8.0",
+    "openweather-apis": "^3.3.5",
+    "request": "^2.88.0",
+    "spotify": "^0.3.0"
+  }
+}
