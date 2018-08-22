@@ -19,8 +19,7 @@ Description: LIRI is a server-side Node.js application used via a command line i
  - NOTE: search strings using more than one word require quotes encapsulating the argument
  - available commands: `movie-this`, `spotify-this-song`, `concert-this`*, `do-what-it-says`
 
-## VM NOTE
-If using the virtual machines(VMs), please see vagrantREADME.md
+## VM NOTE: If using the virtual machines (VMs), please see `vagrantREADME.md`
 
 ## TA Notes & Technical Debt
  - *no reply to request for API Key from "Bandsintown" -- `concert-this` will (for now) return a disclaimer
