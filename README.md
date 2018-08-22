@@ -3,7 +3,7 @@ Description: LIRI is a server-side Node.js application used via a command line i
 
 ## Installation 
  - git clone this branch to your local machine
- - `vagrant up` (see vm doc for further info) to bring up virtual server
+ - `vagrant up` to bring up virtual server (see vm doc for further info)
  - `vagrant ssh` to login to virtual server
  - `cd /var/code`
  - verify package.json exists
@@ -12,7 +12,7 @@ Description: LIRI is a server-side Node.js application used via a command line i
  - verify node_modules contains package.json ingredients
 
 ## Using LIRI
- - basic syntax: node liri.js `<command>` `<arg>`
+ - basic syntax (from VM command line): `node liri.js` `<command>` `<arg>`
  - example1: node liri.js movie-this "Die Hard"
  - example2: node liri.js spotify-this-song jump
  - example3: node liri.js concert-this "van halen"
