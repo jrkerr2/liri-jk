@@ -13,9 +13,9 @@ Description: LIRI is a server-side Node.js application used via a command line i
 
 ## Using LIRI
  - basic syntax (from VM command line): `node liri.js` `<command>` `<arg>`
- - example1: node liri.js movie-this "Die Hard"
- - example2: node liri.js spotify-this-song jump
- - example3: node liri.js concert-this "van halen"
+ - example1: `node liri.js movie-this "Die Hard"`
+ - example2: `node liri.js spotify-this-song jump`
+ - example3: `node liri.js concert-this "van halen"`
  - NOTE: search strings using more than one word require quotes encapsulating the argument
  - available commands: `movie-this`, `spotify-this-song`, `concert-this`*, `do-what-it-says`
 
