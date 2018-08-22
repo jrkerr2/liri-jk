@@ -8,7 +8,7 @@ exports.doBands = function(band) {
         // .getArtistEventList(band)
         // .then(function(events) {
 
-            // return array of events
+            // console.log array of events
 
     // });
 }
