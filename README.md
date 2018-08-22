@@ -2,7 +2,7 @@
 Description: LIRI is a server-side Node.js application used via a command line interface; LIRI will accept commands and arguments and return data
 
 ## Installation 
- - git clone this branch to your local machine
+ - `git clone` this branch to your local machine
  - `vagrant up` to bring up virtual server (see vm doc for further info)
  - `vagrant ssh` to login to virtual server
  - `cd /var/code`
