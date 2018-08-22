@@ -23,7 +23,7 @@ Description: LIRI is a server-side Node.js application used via a command line i
 If using the virtual machines(VMs), please see vagrantREADME.md
 
 ## TA Notes & Technical Debt
- - *no reply to request for API Key from "Bandsintown" -- <concert-this> will (for now) return a disclaimer
+ - *no reply to request for API Key from "Bandsintown" -- `concert-this` will (for now) return a disclaimer
  - dummy doBands export function set up with skeleton of api use in comments
  - spotify.js URL return significance is unknown (will update if needed)
  - dowhat.js can and should be extended, but meets MVP
