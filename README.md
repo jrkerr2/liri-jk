@@ -3,6 +3,8 @@ Description: LIRI is a Node.js application used via a command line interface; LI
 
 ## Installation 
 
+## Using LIRI
+
 ## Technical Debt
 
 ## NOTE
