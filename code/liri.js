@@ -1,4 +1,4 @@
-// main application file
+// central application file
 
 require("dotenv").config();
 
@@ -11,7 +11,7 @@ var bands = require("./bands");  // no API key
 // define cli Inputs
 var comm = process.argv[2];
 var arg1 = process.argv[3];
-var arg2 = process.argv[4];
+// var arg2 = process.argv[4]; // future use for extended functionality
 var results;
 
 
@@ -19,25 +19,23 @@ switch(comm) {
 
     case "spotify-this-song":
         results = spotify.doSpotify(arg1);
-        console.log("got here");
         break;
-
 
     case "movie-this":
         results = omdb.doOmdb(arg1); 
-        console.log(results);
         break;
 
     case "concert-this":
         results = bands.doBands(arg1);
-        console.log(results);
         break;
 
     case "do-what-it-says":
         results = dowhat.doStuff();
-        console.log("Liri DoWhat.JS Return: " + results);
+
+        // find the song
         array = results.split(",");
-        console.log(array);
+
+        // pass the song to Spotify
         spotify.doSpotify(array[1]);
         break;
     
