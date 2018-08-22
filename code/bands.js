@@ -1,9 +1,14 @@
-var bandsintown = require("bandsintown")(APP_ID);
+// var bandsintown = require("bandsintown")(APP_ID);
 
-bandsintown
-    .getArtistEventList("Van Halen")
-    .then(function(events) {
+exports.doBands = function(band) {
+    console.log(band);
+    console.log("No information available on: " + band);
+    console.log("Still waiting for API key approval");
+    // bandsintown
+        // .getArtistEventList(band)
+        // .then(function(events) {
 
-        // returns array of events
+            // return array of events
 
-    });
+    // });
+}

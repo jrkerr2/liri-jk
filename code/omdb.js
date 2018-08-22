@@ -1,10 +1,10 @@
 // requirements to run omdb.js
 var request = require("request");
-var movie = "Die Hard";
+// var movie = "Die Hard";
 // var movieKey = "trilogy"
 
 // wrap OMDB request in exported function (for later use by liri.js)
-// exports.doOmdb = function(movie) {
+exports.doOmdb = function(movie) {
   request(`http://www.omdbapi.com/?t=${movie}&y=&plot=short&apikey=trilogy`, function(error, response, body) {
 
     // If the request is successful (response status code = 200)
@@ -35,4 +35,4 @@ var movie = "Die Hard";
       
     }
   });
-// }
+}

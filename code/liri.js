@@ -1,17 +1,12 @@
 // main application file
 
 require("dotenv").config();
-// var keys = require("./keys");
-// var request = require("request");
-// var fs = require("fs");
+
+// includes
 var omdb = require("./omdb");
 var spotify = require("./spotify");
 var dowhat = require("./dowhat");
-
-// spotify = new Spotify(keys.spotify);
-// var client = new Twitter(keys.twitter);
-// var spotify = keys.spotify;
-// console.log(keys.spotify);
+var bands = require("./bands");  // no API key
 
 // define cli Inputs
 var comm = process.argv[2];
@@ -34,7 +29,7 @@ switch(comm) {
         break;
 
     case "concert-this":
-        results = doBands(arg1, arg2);
+        results = bands.doBands(arg1);
         console.log(results);
         break;
 
